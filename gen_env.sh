@@ -20,3 +20,9 @@ eval mkdir ~/.vim/colors
 eval wget https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim -a ~/.vim/colors/molokai.vim
 
 
+echo "\033[33;5m ----[peco clone]---- \033[m"
+eval mkdir ~/bin
+eval wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz && tar xzvf ./peco_* && rm ./peco_*.gz
+eval mv ./peco_*/peco ~/bin/ && rm -rf ./peco_*
+
+
